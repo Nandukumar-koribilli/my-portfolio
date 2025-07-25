@@ -69,21 +69,6 @@ When I'm not developing and coding, you can find me watching YouTube, listening 
 ![](https://img.shields.io/badge/Tool-Flutter-informational?style=flat&logo=flutter&logoColor=white&color=2bbc8a)
 <!-- Add or remove as needed -->
 
-### 📝 Stats
-
-<a href="https://github.com/nandukumarkoribilli/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=nandukumarkoribilli&show_icons=true&include_all_commits=true&theme=radical" alt="Nandu's github stats" />
-</a>
-<a href="https://github.com/nandukumarkoribilli/github-readme-stats">
-  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=nandukumarkoribilli&layout=compact&theme=radical" />
-</a>
-
-<br />
-
-### 🥸 Here's a fun thing for You !!!
-
-![Jokes Card](https://readme-jokes.vercel.app/api)
-
 <div align="center">
 ### Show some ❤️ by starring some of the repositories!
 </div>
