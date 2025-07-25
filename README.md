@@ -19,7 +19,7 @@
 ### Let's get connected
 <!--social media icon-->
 [<img align="left" alt="Nandu | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Nandu | Instagram" width="22px" src="https://www.instagram.com/nandu___max/" />][instagram]
+[<img align="left" alt="Nandu | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][instagram]
 [<img align="left" alt="Nandu | DEV" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/dev-dot-to.svg" />][DEV]
 
 <br />
@@ -96,7 +96,7 @@ When I'm not developing and coding, you can find me watching YouTube, listening 
 
 <!-- LINKS -->
 [GitHub]: https://github.com/nandukumarkoribilli
-[instagram]: https://www.instagram.com/_i_m_gujju_/
+[instagram]: https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg
 [linkedin]: https://www.linkedin.com/in/nandukumar-koribilli-062ba42a2/
-[DEV]: https://dev.to/
-[gmail]: mailto:your_email_here@gmail.com
+[DEV]: https://dev.to/nandukumar_koribill
+[gmail]: nandukumar9980@gmail.com
