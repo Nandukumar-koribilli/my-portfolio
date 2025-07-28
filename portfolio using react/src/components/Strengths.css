@@ -1,0 +1,43 @@
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.strength-item {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.strength-item:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.strength-icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.strength-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.strength-item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+} 

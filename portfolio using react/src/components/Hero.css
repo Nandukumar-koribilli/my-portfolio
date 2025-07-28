@@ -1,0 +1,203 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Spline 3D Background */
+.spline-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spline-background iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0.8;
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Hide "Built with Spline" text overlay */
+.spline-background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(135deg, 
+    rgba(15, 15, 35, 0.95) 0%, 
+    rgba(26, 26, 46, 0.95) 100%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Overlay for better text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(15, 15, 35, 0.8) 0%, 
+    rgba(26, 26, 46, 0.7) 50%, 
+    rgba(15, 15, 35, 0.9) 100%);
+  z-index: 2;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.social-link:hover {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Mobile optimization for Spline background */
+  .spline-background {
+    opacity: 0.6;
+  }
+  
+  .spline-background iframe {
+    opacity: 0.6;
+    filter: brightness(0.7) contrast(1.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+} 
