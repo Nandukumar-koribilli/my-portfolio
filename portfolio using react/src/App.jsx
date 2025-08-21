@@ -11,6 +11,8 @@ import Strengths from './components/Strengths.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
+import SplashCursor from './SplashCursor'
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,6 +59,7 @@ function App() {
         <Achievements />
         <Strengths />
         <Contact />
+        <SplashCursor />
       </main>
       <Footer />
     </div>
