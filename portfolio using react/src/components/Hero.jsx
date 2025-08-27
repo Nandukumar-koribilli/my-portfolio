@@ -138,24 +138,30 @@ const Hero = () => {
             <p>Gayatri Vidya Parishad</p>
             <div className="social-links">
               <motion.a 
-                href="#" 
+                href="https://github.com/yourusername" 
                 className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <FaGithub />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://linkedin.com/in/yourusername" 
                 className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <FaLinkedin />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://twitter.com/yourusername" 
                 className="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -169,4 +175,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Hero;

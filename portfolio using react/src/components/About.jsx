@@ -13,22 +13,22 @@ const About = () => {
     {
       institution: "Gayatri Vidya Parishad",
       degree: "Honors B.Sc. Computer Science (Major: Computer Science, Minor: IoT)",
-      details: "GPA: 7.18 | 2023-2027"
+      details: "2023-2027"
     },
     {
       institution: "CIPRA Junior College",
       degree: "Intermediate",
-      details: "50.9% | 2023"
+      details: "2023"
     },
     {
       institution: "Sri Satya Industrial Training Center",
       degree: "ITI (Electrician)",
-      details: "81% | 2020-2022"
+      details: "2020-2022"
     },
     {
       institution: "ZP High School",
       degree: "Board of Secondary Education",
-      details: "84% | 2015-2020"
+      details: "2015-2020"
     }
   ];
 

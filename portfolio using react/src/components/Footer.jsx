@@ -1,51 +1,72 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaGithub, 
-  FaInstagram, 
-  FaLinkedin, 
-  FaFacebook, 
-  FaDev, 
-  FaEnvelope 
-} from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      icon: FaGithub,
-      url: 'https://github.com/yourusername',
+      icon: (
+        <img
+          src="https://img.icons8.com/ios-filled/100/github.png"
+          alt="GitHub"
+          style={{ width: '2rem', height: '2rem' }}
+          data-icon="github"
+        />
+      ),
+      url: 'https://github.com/Nandukumar-koribilli',
       color: '#333'
     },
     {
       name: 'Instagram',
-      icon: FaInstagram,
-      url: 'https://instagram.com/yourusername',
+      icon: (
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174855.png"
+          alt="Instagram"
+          style={{ width: '2rem', height: '2rem' }}
+          data-icon="instagram"
+        />
+      ),
+      url: 'https://www.instagram.com/nandu___max/',
       color: '#E4405F'
     },
     {
       name: 'LinkedIn',
-      icon: FaLinkedin,
-      url: 'https://linkedin.com/in/yourusername',
+      icon: (
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+          alt="LinkedIn"
+          style={{ width: '2rem', height: '2rem' }}
+          data-icon="linkedin"
+        />
+      ),
+      url: 'https://www.linkedin.com/in/nandukumar-koribilli-062ba42a2/',
       color: '#0077B5'
     },
     {
       name: 'Facebook',
-      icon: FaFacebook,
-      url: 'https://facebook.com/yourusername',
+      icon: (
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png"
+          alt="Facebook"
+          style={{ width: '2rem', height: '2rem' }}
+          data-icon="facebook"
+        />
+      ),
+      url: 'https://www.facebook.com/nandu.koribilli/',
       color: '#1877F2'
     },
     {
-      name: 'Dev.to',
-      icon: FaDev,
-      url: 'https://dev.to/yourusername',
-      color: '#0A0A0A'
-    },
-    {
       name: 'Email',
-      icon: FaEnvelope,
-      url: 'mailto:your.email@example.com',
+      icon: (
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/9068/9068642.png"
+          alt="Email"
+          style={{ width: '2rem', height: '2rem' }}
+          data-icon="envelope"
+        />
+      ),
+      url: 'mailto:nandukumar9980@gmail.com',
       color: '#EA4335'
     }
   ];
@@ -106,9 +127,10 @@ const Footer = () => {
                   }}
                   whileTap={{ scale: 0.9 }}
                   variants={itemVariants}
+                  style={{ color: social.color }}
                 >
-                  <social.icon />
-                  <span className="social-name">{social.name}</span>
+                  {social.icon}
+                  {/* <span className="social-name">{social.name}</span> */}
                 </motion.a>
               ))}
             </div>
@@ -120,7 +142,7 @@ const Footer = () => {
           variants={itemVariants}
         >
           <div className="footer-divider"></div>
-          <p>&copy; 2024 Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
           <p>Built with ❤️ using React</p>
         </motion.div>
       </motion.div>
@@ -128,4 +150,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;

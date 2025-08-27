@@ -80,8 +80,9 @@
 }
 
 .social-link svg {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: inherit;
+  margin-bottom: 6px;
   z-index: 2;
   position: relative;
   transition: all 0.3s ease;
@@ -89,6 +90,17 @@
 
 .social-link:hover svg {
   transform: scale(1.1);
+}
+
+.social-link img[data-icon="github"] {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin-bottom: 6px;
+  filter: none; /* Ensure no filter hides it */
+  opacity: 1;   /* Ensure fully visible */
+  transition: transform 0.2s;
+  background-color: #1877F2;
 }
 
 .social-name {
@@ -200,4 +212,4 @@
   .social-name {
     font-size: 1rem;
   }
-} 
+}
