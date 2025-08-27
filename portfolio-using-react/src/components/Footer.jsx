@@ -142,7 +142,7 @@ const Footer = () => {
           variants={itemVariants}
         >
           <div className="footer-divider"></div>
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Nandu Kumar Koribilli . All rights reserved.</p>
           <p>Built with ❤️ using React</p>
         </motion.div>
       </motion.div>
