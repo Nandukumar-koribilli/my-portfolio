@@ -66,7 +66,7 @@ const Hero = () => {
             className="hero-title"
             variants={itemVariants}
           >
-            Hi, I'm a{' '}
+            Hi, I'm {' '}
             <span className="highlight">
               {isTyping ? (
                 <motion.span
@@ -74,10 +74,10 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                 >
-                  Computer Science Student
+                  Nandu Kumar Koribilli
                 </motion.span>
               ) : (
-                'Computer Science Student'
+                'Nandu Kumar Koribilli'
               )}
             </span>
           </motion.h1>

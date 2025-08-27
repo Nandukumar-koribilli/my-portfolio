@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import Navbar from './components/Navbar.jsx';
-import Hero from './components/Hero.jsx';
-import About from './components/About.jsx';
-import Skills from './components/Skills.jsx';
-import Experience from './components/Experience.jsx';
-import Projects from './components/Projects.jsx';
-import Achievements from './components/Achievements.jsx';
-import Strengths from './components/Strengths.jsx';
-import Contact from './components/Contact.jsx';
-import Footer from './components/Footer.jsx';
-import './App.css';
-import SplashCursor from './SplashCursor'
-
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
+import Achievements from "./components/Achievements.jsx";
+import Strengths from "./components/Strengths.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
+import "./App.css";
+import SplashCursor from "./SplashCursor";
+import Particles from './bits/Particles/Particles.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,6 +47,19 @@ function App() {
     );
   }
 
+  <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+  <Particles
+    particleColors={['#ffffff', '#ffffff']}
+    particleCount={200}
+    particleSpread={10}
+    speed={0.1}
+    particleBaseSize={100}
+    moveParticlesOnHover={true}
+    alphaParticles={false}
+    disableRotation={false}
+  />
+</div>
+
   return (
     <div className="App">
       <Navbar />
@@ -66,4 +79,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
